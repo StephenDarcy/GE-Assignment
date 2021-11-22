@@ -5,7 +5,7 @@ public class GenerateTerrain : MonoBehaviour
     // Exposing to unity
     [SerializeField] private int width = 256;
     [SerializeField] private int height = 256;
-    [SerializeField] private int depth = 30;
+    [SerializeField] private int depth = 50;
     [SerializeField] private float scale = 10f;
     [SerializeField] private float xOffset;
     [SerializeField] private float yOffset;
