@@ -44,8 +44,12 @@ public class GenerateColours : MonoBehaviour
                 // Looping through each texture and setting its opacity
                 for (int k = 0; k < splatHeights.Length; k++)
                 {
+                    if (k == splatHeights.Length - 1 && terrainHeight >= splatHeights[k].startingHeight)
+                    {
+                        splat[i] = 1;
+                    }
                     // If terrain height is greater than starting height set opacity to 1
-                    if (terrainHeight >= splatHeights[k].startingHeight)
+                    else if (terrainHeight >= splatHeights[k].startingHeight && terrainHeight <= splatHeights[k + 1].startingHeight)
                     {
                         splat[k] = 1;
                     }
