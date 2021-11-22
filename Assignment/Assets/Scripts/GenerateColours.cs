@@ -17,7 +17,7 @@ public class GenerateColours : MonoBehaviour
     [SerializeField] private int alphamapHeight;
     [SerializeField] private int alphamapLayers;
 
-    void Start()
+    void Update()
     {
         // Getting terrain data
         data = Terrain.activeTerrain.terrainData;
@@ -46,7 +46,7 @@ public class GenerateColours : MonoBehaviour
                 {
                     if (k == splatHeights.Length - 1 && terrainHeight >= splatHeights[k].startingHeight)
                     {
-                        splat[i] = 1;
+                        splat[k] = 1;
                     }
                     // If terrain height is greater than starting height set opacity to 1
                     else if (terrainHeight >= splatHeights[k].startingHeight && terrainHeight <= splatHeights[k + 1].startingHeight)

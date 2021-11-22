@@ -9,23 +9,28 @@ public class GenerateTerrain : MonoBehaviour
     [SerializeField] private float scale = 10f;
     [SerializeField] private float xOffset;
     [SerializeField] private float yOffset;
+    [SerializeField] private float backgroundSpeed = .25f;
     private Terrain terrain;
     private TerrainData data;
 
     void Start()
     {
+        // Generating random offset so terrain will be random each time
+        xOffset = Random.Range(0, 10000);
+        yOffset = Random.Range(0, 10000);
+    }
+
+    void Update()
+    {
         // Setting the terrain component
         terrain = GetComponent<Terrain>();
         BuildTerrain();
+        xOffset += Time.deltaTime * backgroundSpeed;
     }
 
 
     void BuildTerrain()
     {
-        // Generating random offset so terrain will be random each time
-        xOffset = Random.Range(0, 10000);
-        yOffset = Random.Range(0, 10000);
-
         // Storing the current terrain data in 'data' and then updating it with new values
         data = terrain.terrainData;
         data.heightmapResolution = width + 1;
