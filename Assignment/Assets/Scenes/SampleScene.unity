@@ -416,6 +416,8 @@ MonoBehaviour:
   - index: 0
     startingHeight: 25
   - index: 0
+    startingHeight: 27
+  - index: 0
     startingHeight: 30
   alphamapWidth: 0
   alphamapHeight: 0
