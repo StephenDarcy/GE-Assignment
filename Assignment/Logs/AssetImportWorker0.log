@@ -624,3 +624,27 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 389.552905 seconds.
+  path: Assets/New Terrain 1.asset
+  artifactKey: Guid(9810a3ec307c9ea47b01b7405b495fc2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/New Terrain 1.asset using Guid(9810a3ec307c9ea47b01b7405b495fc2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '79c86cb3850353ae87dd81080429d134') in 0.025868 seconds 
+  Import took 0.028834 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000262 seconds.
+  path: Assets/New Terrain.asset
+  artifactKey: Guid(239348288ce86764286b3e633aeb018e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/New Terrain.asset using Guid(239348288ce86764286b3e633aeb018e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c6b86b772c74029e20c2147f1cc1223') in 0.041268 seconds 
+  Import took 0.043651 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000342 seconds.
+  path: Assets/Stylize Water.mat
+  artifactKey: Guid(c6d38711520119c4e89ddf1ea6adc007) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stylize Water.mat using Guid(c6d38711520119c4e89ddf1ea6adc007) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fcc7539e4e87fc2874a5b60ff0844e00') in 0.075221 seconds 
+  Import took 0.077557 seconds .
+
