@@ -23,9 +23,11 @@ public class GenerateTerrain : MonoBehaviour
     void Update()
     {
         // Setting the terrain component
+        /*
         terrain = GetComponent<Terrain>();
         BuildTerrain();
         xOffset += Time.deltaTime * backgroundSpeed;
+        */
     }
 
 
