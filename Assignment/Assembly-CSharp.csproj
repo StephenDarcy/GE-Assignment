@@ -39,6 +39,7 @@
      <Compile Include="Assets\Scripts\GenerateTerrain.cs" />
      <Compile Include="Assets\Scripts\GenerateColours.cs" />
      <Compile Include="Assets\Scripts\FollowPlayer.cs" />
+     <Compile Include="Assets\Scripts\Player.cs" />
     <Reference Include="UnityEngine">
         <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.13f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
     </Reference>
