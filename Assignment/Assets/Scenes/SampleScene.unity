@@ -152,7 +152,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 326583efc2a479346910d9586edf9675, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 34
+      value: 33.56
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 326583efc2a479346910d9586edf9675, type: 3}
       propertyPath: m_LocalPosition.z
@@ -460,7 +460,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 112
+  m_Constraints: 120
   m_CollisionDetection: 0
 --- !u!114 &427511337
 MonoBehaviour:
@@ -477,7 +477,7 @@ MonoBehaviour:
   groundCheckTransform: {fileID: 1076811511}
   playerMask:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 4294967295
 --- !u!4 &427511338 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 326583efc2a479346910d9586edf9675, type: 3}
