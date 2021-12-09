@@ -22,7 +22,6 @@ public class Player : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            Debug.Log("Space Key Was Pressed Down");
             jumpKeyWasPressed = true;
         }
 
