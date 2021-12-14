@@ -2710,6 +2710,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01f64df90a50d3a47b3e547328504acf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  jumpIsActivated: 0
   groundCheckTransform: {fileID: 1076811511}
   playerMask:
     serializedVersion: 2
@@ -3115,6 +3116,7 @@ GameObject:
   - component: {fileID: 531437763}
   - component: {fileID: 531437765}
   - component: {fileID: 531437764}
+  - component: {fileID: 531437766}
   m_Layer: 5
   m_Name: ToggleJumpStatus
   m_TagString: Untagged
@@ -3185,6 +3187,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 531437762}
   m_CullTransparentMesh: 1
+--- !u!114 &531437766
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 531437762}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a558a126726b1f34db6d21f74f79dafb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 427511338}
+  toggle: {fileID: 531437764}
+  status: 0
 --- !u!1001 &534383408
 PrefabInstance:
   m_ObjectHideFlags: 0

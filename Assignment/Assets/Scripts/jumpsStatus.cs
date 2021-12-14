@@ -16,8 +16,10 @@ public class jumpsStatus : MonoBehaviour
 
         if (status) {
             toggle.text = "Active";
+            toggle.color = Color.green;
         } else {
-            toggle.text = "False";
+            toggle.text = "Disabled";
+            toggle.color = Color.red;
         }
         
     }
