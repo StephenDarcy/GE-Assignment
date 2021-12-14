@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
+    public AudioClip jump;
+    public AudioSource audioSource;
     private bool jumpKeyWasPressed;
     public bool jumpIsActivated = false;
     private float horizontalInput;
@@ -50,6 +52,7 @@ public class Player : MonoBehaviour
 
         if (jumpKeyWasPressed)
         {
+            audioSource.PlayOneShot(jump, 0.7F);
             float jumpPower = 5;
             if (superJumpsRemaining > 0 && jumpIsActivated)
             {
