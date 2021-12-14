@@ -20,7 +20,7 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        // if player is below 20 application reloads
         if (rigidbodyComponent.position.y < 20) {
             Application.LoadLevel(Application.loadedLevel);
         }
