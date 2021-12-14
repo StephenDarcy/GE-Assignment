@@ -5,6 +5,7 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     private bool jumpKeyWasPressed;
+    private bool jumpIsActivated;
     private float horizontalInput;
     private Rigidbody rigidbodyComponent;
     [SerializeField] private Transform groundCheckTransform = null;
@@ -28,6 +29,10 @@ public class Player : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space))
         {
             jumpKeyWasPressed = true;
+        }
+
+        if (Input.GetKeyDown(KeyCode.Q)) {
+            jumpIsActivated = !jumpIsActivated;
         }
 
         horizontalInput = Input.GetAxis("Horizontal");
