@@ -5,7 +5,7 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     private bool jumpKeyWasPressed;
-    private bool jumpIsActivated;
+    public bool jumpIsActivated = false;
     private float horizontalInput;
     private Rigidbody rigidbodyComponent;
     [SerializeField] private Transform groundCheckTransform = null;
@@ -51,7 +51,7 @@ public class Player : MonoBehaviour
         if (jumpKeyWasPressed)
         {
             float jumpPower = 5;
-            if (superJumpsRemaining > 0)
+            if (superJumpsRemaining > 0 && jumpIsActivated)
             {
                 jumpPower *= 2;
                 superJumpsRemaining--;
