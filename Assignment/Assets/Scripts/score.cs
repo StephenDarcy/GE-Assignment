@@ -8,8 +8,14 @@ public class score : MonoBehaviour
     public Text scoreValue;
     public Text highscoreText;
     public float distance;
-    public float currentHighscore;
     public float previousDistance = 0f;
+
+
+    void Start()
+    {
+        float highScore = PlayerPrefs.GetFloat("highScore");
+        highscoreText.text = highScore.ToString("0");
+    }
 
     // Update is called once per frame
     void Update()
@@ -18,14 +24,14 @@ public class score : MonoBehaviour
         if (distance > previousDistance) {
             scoreValue.text = distance.ToString("0");
             previousDistance = distance;
-            currentHighscore = distance;
         }
 
         float highScore = PlayerPrefs.GetFloat("highScore");
-        highscoreText.text = highScore.ToString("0");
 
-        if (currentHighscore > highScore) {
-            PlayerPrefs.SetFloat("highScore", currentHighscore);
+        if (distance > highScore) {
+            PlayerPrefs.SetFloat("highScore", distance);
+            PlayerPrefs.Save();
+            highscoreText.text = highScore.ToString("0");
         }
 
     }
