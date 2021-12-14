@@ -20,6 +20,11 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+        if (rigidbodyComponent.position.y < 20) {
+            Application.LoadLevel(Application.loadedLevel);
+        }
+
         if (Input.GetKeyDown(KeyCode.Space))
         {
             jumpKeyWasPressed = true;
