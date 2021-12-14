@@ -42,6 +42,7 @@
      <Compile Include="Assets\Scripts\Player.cs" />
      <Compile Include="Assets\Scripts\GenerateColours.cs" />
      <Compile Include="Assets\Scripts\score.cs" />
+     <Compile Include="Assets\Scripts\jumpsRemaining.cs" />
      <None Include="Assets\AurynSky\Gems Ultimate Pack\READ ME.txt" />
     <Reference Include="UnityEngine">
         <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.13f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>

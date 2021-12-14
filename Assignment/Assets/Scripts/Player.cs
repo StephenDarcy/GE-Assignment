@@ -9,7 +9,7 @@ public class Player : MonoBehaviour
     private Rigidbody rigidbodyComponent;
     [SerializeField] private Transform groundCheckTransform = null;
     [SerializeField] private LayerMask playerMask;
-    [SerializeField] private int superJumpsRemaining;
+    [SerializeField] public int superJumpsRemaining;
 
     // Start is called before the first frame update
     void Start()
