@@ -5,6 +5,8 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     public AudioClip jump;
+    public AudioClip collect;
+    public AudioClip death;
     public AudioSource audioSource;
     private bool jumpKeyWasPressed;
     public bool jumpIsActivated = false;
@@ -26,6 +28,10 @@ public class Player : MonoBehaviour
         // if player is below 20 application reloads
         if (rigidbodyComponent.position.y < 20) {
             Application.LoadLevel(Application.loadedLevel);
+        }
+
+        if (rigidbodyComponent.position.y < 25) {
+            audioSource.PlayOneShot(death,.7f);
         }
 
         if (Input.GetKeyDown(KeyCode.Space))
@@ -69,6 +75,7 @@ public class Player : MonoBehaviour
     {
         if (other.gameObject.layer == 9)
         {
+            audioSource.PlayOneShot(collect, 0.7F);
             Destroy(other.gameObject);
             superJumpsRemaining++;
         }
