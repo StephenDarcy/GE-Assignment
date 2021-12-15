@@ -10,8 +10,10 @@ public class jumpsRemaining : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //get number of jumps player has 
         Player playerScript = player.GetComponent<Player>();
         jumpsLeft = playerScript.superJumpsRemaining;
+        //display jumps left on screen
         jumpsLeftText.text = jumpsLeft.ToString();
     }
 }
