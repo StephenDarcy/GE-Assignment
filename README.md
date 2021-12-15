@@ -37,6 +37,9 @@ Press play to run the game, use WASD to controll the player, and use Q to toggle
 [https://www.youtube.com/watch?v=Y-fDGOqHQZA&t=281s]()  
 [https://www.youtube.com/watch?v=vFvwyu_ZKfU&t=481s]()  
 
+# Youtube
+[![YouTube](https://i3.ytimg.com/vi/7-eyBEL0VHo/maxresdefault.jpg)](https://www.youtube.com/watch?v=7-eyBEL0VHo)
+
 # What I am most proud of in the assignment
 Overall I am proud of my whole assignment as I feel all the components worked how I wanted to them in the end, and the procedurally generated background using Perlin Noise looks good for the game. One key moment I was proud of was when I got the textures to successfully map to the terrain at certain heights as it made the game look way better.
 
