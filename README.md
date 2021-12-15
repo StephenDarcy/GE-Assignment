@@ -31,6 +31,10 @@ Press play to run the game, use WASD to controll the player, and use Q to toggle
 | Sounds | Modified from [https://freesound.org/home/]() |
 | Textures | Modified from various sources |
 
+# Blender
+3D Model was created using Blender. This was my first time using Blender so it is not amazing.  
+I used this video to learn how to model in Blender - [https://www.youtube.com/watch?v=9xAumJRKV6A]()
+
 # References - (Extra videos that helped not mentioned above)
 [https://www.youtube.com/watch?v=KOf3P5y19Bw]()  
 [https://www.youtube.com/watch?v=TAGZxRMloyU]()  
