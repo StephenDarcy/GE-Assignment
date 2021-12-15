@@ -30,15 +30,18 @@ public class Player : MonoBehaviour
             Application.LoadLevel(Application.loadedLevel);
         }
 
+        // playing death noise as player falls
         if (rigidbodyComponent.position.y < 25) {
             audioSource.PlayOneShot(death,.7f);
         }
 
+        //getting player space press
         if (Input.GetKeyDown(KeyCode.Space))
         {
             jumpKeyWasPressed = true;
         }
 
+        // toggling super jump with q
         if (Input.GetKeyDown(KeyCode.Q)) {
             jumpIsActivated = !jumpIsActivated;
         }
@@ -49,23 +52,31 @@ public class Player : MonoBehaviour
     // Fixed update is called once every physics update
     private void FixedUpdate()
     {
+        //moving player
         rigidbodyComponent.velocity = new Vector3(horizontalInput, rigidbodyComponent.velocity.y, 0);
 
+        //if player is touching ground
         if (Physics.OverlapSphere(groundCheckTransform.position, 0.1f, playerMask).Length == 1)
         {
             return;
         }
 
+        //if jumping
         if (jumpKeyWasPressed)
         {
+            //play jump noise
             audioSource.PlayOneShot(jump, 0.7F);
             float jumpPower = 5;
+            //if super jumps available and active
             if (superJumpsRemaining > 0 && jumpIsActivated)
             {
+                //jump twice as high
                 jumpPower *= 2;
                 superJumpsRemaining--;
             }
+            //jumping motion
             rigidbodyComponent.AddForce(Vector3.up * jumpPower, ForceMode.VelocityChange);
+            //stop jump
             jumpKeyWasPressed = false;
         }
     }
@@ -73,10 +84,14 @@ public class Player : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
+        //if player collects gem
         if (other.gameObject.layer == 9)
         {
+            //play audio
             audioSource.PlayOneShot(collect, 0.7F);
+            //destroy gem
             Destroy(other.gameObject);
+            //increment jumps
             superJumpsRemaining++;
         }
     }
