@@ -30,3 +30,10 @@ Press play to run the game, use WASD to controll the player, and use Q to toggle
 | Scripts - Score.cs | Self Written |
 | Sounds | Modified from [https://freesound.org/home/]() |
 | Textures | Modified from various sources |
+
+# References - (Extra videos that helped not mentioned above)
+[https://www.youtube.com/watch?v=KOf3P5y19Bw]()
+[https://www.youtube.com/watch?v=TAGZxRMloyU]()
+[https://www.youtube.com/watch?v=Y-fDGOqHQZA&t=281s]()
+[https://www.youtube.com/watch?v=vFvwyu_ZKfU&t=481s]()
+
