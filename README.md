@@ -37,4 +37,10 @@ Press play to run the game, use WASD to controll the player, and use Q to toggle
 [https://www.youtube.com/watch?v=Y-fDGOqHQZA&t=281s]()  
 [https://www.youtube.com/watch?v=vFvwyu_ZKfU&t=481s]()  
 
+# What I am most proud of in the assignment
+Overall I am proud of my whole assignment as I feel all the components worked how I wanted to them in the end, and the procedurally generated background using Perlin Noise looks good for the game. One key moment I was proud of was when I got the textures to successfully map to the terrain at certain heights as it made the game look way better.
+
+# Proposal submitted 
+Platformer style game in a 3d world. Background terrain that is procedurally generated using Perlin noise functions. A simple 3d character created in blender the user can control.
+
 
