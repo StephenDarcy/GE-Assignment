@@ -13,6 +13,7 @@ Press play to run the game, use WASD to controll the player, and use Q to toggle
 
 # List of classes/assets in the project 
 | Class/asset | Source |
+|-----------|-----------|
 | AurynSky | Modified from [https://assetstore.unity.com/packages/3d/props/simple-gems-ultimate-animated-customizable-pack-73764]() |
 | Cube_World | Modified from [https://assetstore.unity.com/packages/3d/environments/cube-world-brick-blocks-proto-series-153993]() | 
 | Fonts | From [https://fonts.google.com/specimen/Oswald?query=oswald]() |
